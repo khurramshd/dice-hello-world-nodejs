@@ -13,6 +13,7 @@ stage('Test') {
 steps {
 sh 'docker container rm -f node'
 sh 'docker container run -p 8001:8080 --name node -d khurram88/test-node-app'
+'sleep 10'   
 sh 'curl -I http://localhost:8001'
 }
 }
