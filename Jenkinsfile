@@ -26,3 +26,4 @@ sh 'docker push khurram88/test-node-app:latest'
 }
 }
 }
+}
